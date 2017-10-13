@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Start Page</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+    <body>
+     <script type="text/javascript"> 
+function activa(v){ 
+if(v==1)document.formulario.vr_negativo.disabled = true; 
+else 
+if(v==0)document.formulario.vr_negativo.disabled = false; 
+} 
+</script> 
+
+<form name="formulario" id="formulario"> 
+<select name="lista" id="lista" onclick="activa(this.value)"> 
+<option value="0">Si</option> 
+<option value="1">No</option> 
+</select> 
+<input type="text" name="vr_negativo" id="vr_negativo" size="15"> 
+</form> 
+    </body>
+</html>
