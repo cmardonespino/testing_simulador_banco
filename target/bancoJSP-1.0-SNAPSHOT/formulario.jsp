@@ -64,7 +64,7 @@ n++;
  </select>  
                
 <td for="fecha">Fecha de vencimiento: </td>
-                    <input type="text" id="fecha" name="fecha" value="" />
+<input type="text" id="fecha" name="fecha" value="" />
                   
                   </div>
 

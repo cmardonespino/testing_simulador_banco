@@ -11,7 +11,7 @@ package modelo;
  */
 public class validadores {
     
-    public validadores(){
+    public void validadores(){
         //SE MODIFICA ESTE METODO QUITANDOLE EL VOID PARA QUE QUEDE COMO CONSTRUCTOR INICIAL DE LA CLASE
     }
     
@@ -116,13 +116,13 @@ public class validadores {
                     return montoAux;
                 }
                 else
-                    return null;
+                    return "";
             }catch(NumberFormatException ex){
-                return null;
+                return "";
             }
             
         }
-	return null;
+	return "";
 
     }
 }

@@ -24,15 +24,21 @@
             String Cuota = request.getParameter("cuota");
             String Fecha = request.getParameter("fecha");
            
-            cuotaM m= new cuotaM();
-            validadores v= new validadores(); 
+            /*
+            out.print(Rut);
+            out.print(Monto);
+            out.print(Cuota);
+            out.print(Fecha);
+            */
             
+            cuotaM m = new cuotaM();
+            validadores v= new validadores(); 
+          
         if(Rut.equals("") || Monto.equals("") || Cuota.equals("") ||Fecha.equals("")  ){
             out.println("Debe llenar todos los campos");
         }else{
            
             if(v.validadorRut(Rut)==true){
-                
                 Monto = v.validateMontoLiquido(Monto);
                 if(!Monto.equals("")){
                                         
