@@ -17,10 +17,10 @@
         <title>resultado</title>
     </head>
     <body>
-            <%String Rut = request.getParameter("rut");
-            String Monto = request.getParameter("monto");
-            String Cuota = request.getParameter("cuota");
-            String Fecha = request.getParameter("fecha");
+            <% String Rut = request.getParameter("rut"); %>
+            <% String Monto = request.getParameter("monto"); %>
+            <% String Cuota = request.getParameter("cuota"); %>
+            <% String Fecha = request.getParameter("fecha"); %>
             
             cuotaM m = new cuotaM();
             validadores v= new validadores(); 
