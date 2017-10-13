@@ -11,7 +11,7 @@ package modelo;
  */
 public class validadores {
     
-    public void validadores(){
+    public validadores(){
         //SE MODIFICA ESTE METODO QUITANDOLE EL VOID PARA QUE QUEDE COMO CONSTRUCTOR INICIAL DE LA CLASE
     }
     

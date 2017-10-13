@@ -17,19 +17,10 @@
         <title>resultado</title>
     </head>
     <body>
-        <%
-               
-            String Rut = request.getParameter("rut");
+            <%String Rut = request.getParameter("rut");
             String Monto = request.getParameter("monto");
             String Cuota = request.getParameter("cuota");
             String Fecha = request.getParameter("fecha");
-           
-            /*
-            out.print(Rut);
-            out.print(Monto);
-            out.print(Cuota);
-            out.print(Fecha);
-            */
             
             cuotaM m = new cuotaM();
             validadores v= new validadores(); 
@@ -37,7 +28,6 @@
         if(Rut.equals("") || Monto.equals("") || Cuota.equals("") ||Fecha.equals("")  ){
             out.println("Debe llenar todos los campos");
         }else{
-           
             if(v.validadorRut(Rut)==true){
                 Monto = v.validateMontoLiquido(Monto);
                 if(!Monto.equals("")){
@@ -52,9 +42,7 @@
             
                     out.println("ingrese un rut valido");
             }
-        }
-        
-        %>
+        }%>
         
     </body>
 </html>
