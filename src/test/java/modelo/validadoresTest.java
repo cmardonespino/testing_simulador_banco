@@ -44,7 +44,7 @@ public class validadoresTest {
     public void testValidadores() {
         System.out.println("validadores");
         validadores instance = new validadores();
-        instance.validadores();
+        //instance.validadores(); //SE COMENTA ESTA LINEA YA QUE ESTABA LLAMANDO AL CONSTRUCTOR COMO UNA FUNCION O METODO
         // TODO review the generated test code and remove the default call to fail.
        
     }

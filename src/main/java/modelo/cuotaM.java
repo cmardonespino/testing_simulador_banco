@@ -13,6 +13,8 @@ package modelo;
  */
 public class cuotaM {
     
+    /* Se inicializan variables a utilizar para el calculo de cuota, etc
+    */
     String n2 = "";
     String n1 = "";
     String n3 = "";
@@ -62,17 +64,14 @@ public class cuotaM {
     }
     
     
-public String calculadorCuota(String monto,String cuota){
-    
-      
+    public String calculadorCuota(String monto,String cuota){
         n1 = String.valueOf(Integer.parseInt(monto));
         n2 = String.valueOf(Integer.parseInt(cuota));
 
         n3 = String.valueOf((int) (1.79*Integer.parseInt(n1)));
         n4 = String.valueOf((int) (Integer.parseInt(n3)/Integer.parseInt(n2) ));
-            
-       
-      
-        return "monto neto: "+n1+"\nmonto con interes %1.79: "+n3+"\n\n pago mensual de "+n2+" cuotas en: $ "+n4;
+        
+        String mensaje = "monto neto: "+n1+"\nmonto con interes %1.79: "+n3+"\n\n pago mensual de "+n2+" cuotas en: $ "+n4;
+        return mensaje;
     }
 }

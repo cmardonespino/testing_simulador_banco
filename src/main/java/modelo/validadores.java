@@ -11,8 +11,8 @@ package modelo;
  */
 public class validadores {
     
-    public void validadores(){
-        
+    public validadores(){
+        //SE MODIFICA ESTE METODO QUITANDOLE EL VOID PARA QUE QUEDE COMO CONSTRUCTOR INICIAL DE LA CLASE
     }
     
     public String quitaEspacios(String rut){
@@ -59,9 +59,10 @@ public class validadores {
 
         } catch (java.lang.NumberFormatException e) {
         } catch (Exception e) {
+            validacion=false;
         }
         return validacion;
-       }
+    }
     
     public Boolean verificarCaracteres(String rut){
         try{
@@ -115,13 +116,13 @@ public class validadores {
                     return montoAux;
                 }
                 else
-                    return "";
+                    return null;
             }catch(NumberFormatException ex){
-                return "";
+                return null;
             }
             
         }
-	return "";
+	return null;
 
     }
 }
