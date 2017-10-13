@@ -25,27 +25,27 @@
             cuotaM m = new cuotaM();
             validadores v= new validadores(); 
           
-        if(Rut.equals("") || Monto.equals("") || Cuota.equals("") ||Fecha.equals("")  ){ %>
-            <!-- out.println("<p>Debe llenar todos los campos</p>"); -->
-            <p>Debe llenar todos los campos</p>
-        <% }else{
+        if(Rut.equals("") || Monto.equals("") || Cuota.equals("") ||Fecha.equals("")  ){
+            out.println("<p>Debe llenar todos los campos</p>");
+            //<p>Debe llenar todos los campos</p>
+        }else{
             if(v.validadorRut(Rut)==true){
                 Monto = v.validateMontoLiquido(Monto);
-                if(!Monto.equals("")){ %>
+                if(!Monto.equals("")){
                                         
-                   <!--
+                   
                     out.println("rut: "+Rut+"\n Cuotas: "+Cuota+"\n"+m.calculadorCuota(Monto,Cuota));
-                    out.print("pagar primera cuota en:"+Fecha); -->
-                   <p>WENA</p>
-                <% }else{ %>
-                    <!-- out.println("<p>Ingrese un monto valido entre 500.000 y 100.000.000</p>"); -->
-                    <p>Ingrese un monto valido entre 500.000 y 100.000.000</p>
-                    <% }
-            }else { %>
-                <!--
-                    out.println("ingrese un rut valido"); -->
-                <p>Ingrese un rut valido</p>
-            <% }
+                    out.print("pagar primera cuota en:"+Fecha);
+                   // <p>WENA</p>
+                 }else{
+                    out.println("<p>Ingrese un monto valido entre 500.000 y 100.000.000</p>");
+                    //<p>Ingrese un monto valido entre 500.000 y 100.000.000</p>
+                    }
+            }else {
+                
+                    out.println("ingrese un rut valido");
+                // <p>Ingrese un rut valido</p>
+            }
         }%>
         
     </body>
